@@ -1,0 +1,177 @@
+body{
+    background-size: cover;
+    background-image: url("https://images6.alphacoders.com/133/thumb-1920-1334608.jpeg");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    font-family: Arial, sans-serif;
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+.Navbar a{
+    position: relative;
+    text-decoration: none;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
+    margin-left: 10rem;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: black
+}
+
+.Navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0px;
+    left: -15px;
+    bottom: 5px;
+    transition: 0.2s ease;
+}
+
+.Navbar a:hover::after{
+    width: 100px;
+}
+
+#Python{
+    position: absolute;
+    background-color: aliceblue;
+    padding: 1rem;
+    height: 1rem;
+    width: 10rem;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 8px;
+    top: 15vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+#Python:hover{
+    padding: 5rem 1rem;
+    height: 15rem;
+    width: 30rem;
+    display:block;
+    justify-content:unset;
+    align-items: normal;
+    transition: all 0.2s ease ;
+}
+
+#Python li{
+    list-style: none;
+    margin-top: 30px;
+    font-size: 0px;
+    transition: all 0.2s ease ;
+}
+
+#Python:hover li{
+    list-style: none;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease ;
+}
+
+#Python p:hover{
+    color: rebeccapurple;
+    transition: all 0.3s ease-in;
+}
+
+#Python:hover img{
+    bottom: 30px;
+    width: 200px;
+    transition: all 0.3s ease ;
+}
+
+
+#Python img{
+    bottom: 30px;
+    width: 0px;
+    transition: all 0.2s ease ;
+}
+
+#Python li p a{
+    text-decoration: none;
+    color: green;
+    top: 2rem;
+    transition: all 0.1s ease;
+}
+
+#Python li p a:hover{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: purple;
+    transition: all 0.5s ease;
+}
+
+#Python:hover ~ #An-xin {
+    display: none;
+}
+
+#An-xin:hover ~ #Python {
+    display: none;
+}
+
+/*________________________________________*/
+
+#An-xin{
+    position: absolute;
+    background-color: aliceblue;
+    padding: 1rem;
+    height: 1rem;
+    width: 10rem;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 8px;
+    top: 25vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+#An-xin:hover{
+    padding: 5rem 1rem;
+    height: 5rem;
+    width: 20rem;
+    display:block;
+    justify-content:unset;
+    align-items: normal;
+    transition: all 0.2s ease ;
+}
+
+#An-xin a{
+    font-size: 0px;
+    transition: all 0.2s ease ;
+
+}
+
+#An-xin:hover a{
+    font-size: 1rem;
+    transition: all 0.2s ease ;
+}
+
+#An-xin a:hover{
+    font-size: 2rem;
+    color: green;
+    transition: all 0.2s ease ;
+}

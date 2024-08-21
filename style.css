@@ -1,0 +1,122 @@
+body{
+    background-size: cover;
+    background-image: url("https://images6.alphacoders.com/133/thumb-1920-1334608.jpeg");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.Info-box {
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 8px;
+    border: 3px solid black;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: padding 1.5s ease, transform 1.5s ease;
+}
+
+.Info-box h1{
+    transition: color 1.5s ease, transform 1.5s ease;
+}
+
+.Info-box:hover h1{
+    transform: translateY(-90px);
+    transition: transform 0.8s ease, color 0.4s ease;
+}
+
+.Info-box:hover{
+    padding: 6rem 150px;
+    transition: 0.8s ease;
+}
+
+.Info-box h2{
+    font-family: Arial, sans-serif;
+    font-size: 0px;
+    color: black;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+.Info-box:hover h2{
+    font-size: 1rem;
+    transition: font-size 1s ease;
+}
+
+.Info-box h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.Info-box h2 a:hover{
+    text-decoration: none;
+    color: rgb(46, 0, 252);
+}
+
+.Info-box h2:hover{
+    font-size: 2rem;
+    background: rgb(5, 245, 105);
+    border: black solid 1px;
+    border-radius: 3px;
+    color: rgb(46, 0, 252);
+    transition: font-size 1s ease;
+}
+
+
+.in{animation: in 0.8s ease-in forwards}
+@keyframes in{
+    from{
+        color: white;
+    } to {
+        color: black;
+    }
+}
+.out{animation: out 0.8s ease-in forwards}
+@keyframes out{
+    from{
+        color: black;
+    } to {
+        color: white;
+    }
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+.Navbar a{
+    position: relative;
+    text-decoration: none;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
+    margin-left: 10rem;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: black
+}
+
+.Navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0px;
+    left: -15px;
+    bottom: 5px;
+    transition: 0.2s ease;
+}
+
+.Navbar a:hover::after{
+    width: 100px;
+}
